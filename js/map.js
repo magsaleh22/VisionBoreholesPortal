@@ -111,6 +111,7 @@ function readJSON(path) {
 					map.fitBounds(markers.getBounds())
 					map.setView(item.getLatLng());
 					drawBoreholeProfile(item);
+					map.invalidateSize()
 
 				}
 			})
