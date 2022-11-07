@@ -17,7 +17,7 @@ $(document).ready(function () {
 	
 
 	// plugins
-	 ctlSidebarRight = L.control.sidebar('sidebar-right',{
+	ctlSidebarRight = L.control.sidebar('sidebar-right',{
 		position: "right"
 	}).addTo(map);
 
@@ -26,6 +26,7 @@ $(document).ready(function () {
 
 	ctlEasyButton = L.easyButton('fa-exchange', function(){
 		ctlSidebarLeft.toggle();
+		
 	}).addTo(map);
 
 
@@ -154,7 +155,7 @@ function drawBoreholeProfile(selectedBH){
 		// selectedBHGeology.push(jsonObject.responseJSON.BHGeology.pk)
 	})
 
-	console.log(selectedBHGeology)
+	// console.log(selectedBHGeology)
 // let data_strct = {[
 // 					 {% for lyr in selectedBHGeology %}
 // 						{label: '{{lyr.SCIS}}',
@@ -162,7 +163,7 @@ function drawBoreholeProfile(selectedBH){
 // 						backgroundColor: '#994499'}
 // 					{% endfor %}]}
 
-	console.log(selectedBHGeology[0].fields.depthEnd - selectedBHGeology[0].fields.depthStart)
+
 
 	const myChart = new Chart(ctx, {
 		type: 'bar',
@@ -181,16 +182,16 @@ function drawBoreholeProfile(selectedBH){
 		,
 		options: {
 			type: "invertedLinear",
-			// scales: {
-			// 	xAxes: [{
-			// 		// stacked: true // this should be set to make the bars stacked
-			// 	 }],
+			scales: {
+				xAxes: [{
+					stacked: true // this should be set to make the bars stacked
+				 }],
 				
-			// 	yAxes: [{
-			// 		beginAtZero: true,
-			// 		stacked: true
-			// 	}]
-			// }
+				yAxes: [{
+					beginAtZero: true,
+					stacked: true
+				}]
+			}
 		}
 	});
 }
@@ -202,7 +203,7 @@ function onClick(e) {
 	// console.log("onClickEvent - this: ")
 	// console.log(this)
 	drawBoreholeProfile(e)
-	// ctlSidebarRight.show();
+	ctlSidebarRight.show();
 }
 
 // function drawCanvas(){
