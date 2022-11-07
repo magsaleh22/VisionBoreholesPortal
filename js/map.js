@@ -71,7 +71,7 @@ function readJSON(path) {
 								'</li><li>Length(m) :' +item.properties.GL+
 								'</li><li>Latitude:' + item.geometry.coordinates[0]+
 								'</li><li>Longitude:' + item.geometry.coordinates[1]+
-								'</li><li>Report: <a href="../pdf/'+item.properties.BHNo+'.pdf" target="_blank" rel="noopener noreferrer">Scan</a></li>'
+								'</li><li>Report: <a href="pdf/'+item.properties.BHNo+'.pdf" target="_blank" rel="noopener noreferrer">Scan</a></li>'
 			// <ul style="list-style-type:none;">
 			// 	<li>Coffee: bla bla</li>
 			// 	<li>Tea: ble ble</li>
