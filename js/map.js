@@ -17,15 +17,15 @@ $(document).ready(function () {
 	
 
 	// plugins
-	var ctlSidebarRight = L.control.sidebar('sidebar-right',{
-		position: "right"
-	}).addTo(map);
+	// var ctlSidebarRight = L.control.sidebar('sidebar-right',{
+	// 	position: "right"
+	// }).addTo(map);
 
-	console.log(map);
+	// console.log(map);
 
 
 	
-	var ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
+	// var ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
 
 	ctlEasyButton = L.easyButton('fa-exchange', function(){
 		ctlSidebarLeft.toggle();
@@ -208,7 +208,7 @@ function onClick(e) {
 	// console.log("onClickEvent - this: ")
 	// console.log(this)
 	drawBoreholeProfile(e)
-	ctlSidebarRight.show();
+	// ctlSidebarRight.show();
 }
 
 // function drawCanvas(){
