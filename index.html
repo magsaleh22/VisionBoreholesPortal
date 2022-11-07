@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Vision BHP</title>
+    <meta charset="utf-8" />
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- style sheets awesome 4-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- style sheets of leaflet plugins -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="/css/L.Control.Sidebar.css" />
+    <link rel="stylesheet" href="/css/easy-button.css" />
+  </head>
+  <!-- end of html header -->
+  <body>
+    <div class="header">Vision Boreholes Portal</div>
+    <div class="header-logo">
+      <img class="logo" src="/images/vision.png" />
+    </div>
+
+    <!-- static left sidebar -->
+    <!-- <div id = "sidebar" class="sidebar" style="font-weight: bold">Boreholes</div>  -->
+    <div id="sidebar" class="sidebar"><h1>Boreholes</h1></div>
+
+    <div class="content">
+      <div id="map"></div>
+    </div>
+    <div class="footer">copyrights Vision</div>
+
+    <!--sidebar right hidden-->
+    <div id="sidebar-right" class="sidebar-right">
+      <div id="sidebar-heading" style="margin: 5px">
+        <h4 style="display: inline">
+          <b style="color: dodgerblue">Borehole</b> Profile
+        </h4>
+        <br />
+        <div id="sidebar-body">
+          <div style="width: 80%; margin: 5px auto">
+            <h3>
+              <i class="fa fa-bar-chart">
+                Borehole sedimens profile, depth in meters.
+                
+              </i>
+            </h3>
+          </div>
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- javascript of leaflet and its plugins-->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="/js/L.Control.Sidebar.js"></script>
+  <script src="/js/easy-button.js"></script>
+
+  <!-- jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- barchart-->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <!-- my script should be the last one  -->
+  <script src="js/map.js"></script>
+</html>

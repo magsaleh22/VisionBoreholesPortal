@@ -1,0 +1,210 @@
+{
+    "BHGeology": [
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 22,
+            "fields": {
+                "BHSurvey": 140,
+                "sampleNo": 1,
+                "depthStart": "0.50",
+                "depthEnd": "2.00",
+                "USCS": "SM",
+                "discription": "Note: No groundwater was encountered down to end of boring. Medium dense, pale brown, fine to coarse silty SAND, strong reaction with dilute hydrochloric acid, moist."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 23,
+            "fields": {
+                "BHSurvey": 140,
+                "sampleNo": 2,
+                "depthStart": "2.00",
+                "depthEnd": "4.00",
+                "USCS": "SC-SM",
+                "discription": "Medium dense, pale brownish yellow, fine to coarse silty/clayey SAND, strong reaction with dilute hydrochloric acid, moist. Becomes dense."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 24,
+            "fields": {
+                "BHSurvey": 140,
+                "sampleNo": 3,
+                "depthStart": "4.00",
+                "depthEnd": "6.00",
+                "USCS": "SM",
+                "discription": "Very dense, pale brownish yellow, fine to coarse silty SAND , strong reaction with dilute hydrochloric acid, moist."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 25,
+            "fields": {
+                "BHSurvey": 140,
+                "sampleNo": 4,
+                "depthStart": "6.00",
+                "depthEnd": "7.00",
+                "USCS": "SC",
+                "discription": "Dense, pale brownish yellow, fine to coarse clayey SAND, strong reaction with dilute hydrochloric acid, moist."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 26,
+            "fields": {
+                "BHSurvey": 140,
+                "sampleNo": 5,
+                "depthStart": "7.00",
+                "depthEnd": "8.00",
+                "USCS": "SM",
+                "discription": "Medium dense, pale yellow, fine to coarse silty SAND, strong reaction with dilute hydrochloric acid, moist."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 27,
+            "fields": {
+                "BHSurvey": 140,
+                "sampleNo": 6,
+                "depthStart": "8.00",
+                "depthEnd": "10.00",
+                "USCS": "SM",
+                "discription": "Becomes dense."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 28,
+            "fields": {
+                "BHSurvey": 140,
+                "sampleNo": 7,
+                "depthStart": "10.00",
+                "depthEnd": "10.45",
+                "USCS": "SM",
+                "discription": "Dense, pale yellow, fine to coarse silty SAND, strong reaction with dilute hydrochloric acid, moist. Bottom of borehole."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 29,
+            "fields": {
+                "BHSurvey": 152,
+                "sampleNo": 1,
+                "depthStart": "0.50",
+                "depthEnd": "2.00",
+                "USCS": "SM",
+                "discription": "Note: No groundwater was encountered down to end of boring. Medium dense, pale brown, fine to coarse silty SAND, strong reaction with dilute hydrochloric acid, moist."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 30,
+            "fields": {
+                "BHSurvey": 152,
+                "sampleNo": 2,
+                "depthStart": "2.00",
+                "depthEnd": "3.00",
+                "USCS": "SM",
+                "discription": "Becomes very dense."
+            }
+        },
+        {
+            "model": "BoreholesApp.boreholegeology",
+            "pk": 31,
+            "fields": {
+                "BHSurvey": 152,
+                "sampleNo": 3,
+                "depthStart": "3.00",
+                "depthEnd": "10.21",
+                "USCS": "SC",
+                "discription": "Very dense, pale brown, fine to coarse clayey SAND, strong reaction with dilute hydrochloric acid, moist.Bottom of borehole."
+            }
+        }
+    ],
+    "BHSurvey": {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "properties": {
+                    "BHNo": "BH-06",
+                    "GL": "117.60",
+                    "GWL": "0.00",
+                    "boringDiam": "125.00",
+                    "location": "KNPC MAA, SHU to Al Mutla Depot, State of Kuwait",
+                    "locationDetailed": "Bet. Rd.70 & Rd.80",
+                    "startDate": "2015-11-21T00:00:00Z",
+                    "endDate": "2015-11-21T00:00:00Z",
+                    "drillRigNo": "D-50MB",
+                    "jobOrderNo": "15-928",
+                    "notes": "The measured G.W.L. is approximate and has been recorded after at least 24 hours from completion of drilling. Dilute HCL Testing Per ASTM D2488, Clauses 10.6 &14.2.5 for checking the presence of CaCO3 which may indicate false soil strength.",
+                    "owner": 196,
+                    "contractor": 196,
+                    "consultant": 196,
+                    "operator": 196,
+                    "project": 209,
+                    "BoreholeGeology": [
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28
+                    ],
+                    "model": "BoreholesApp.boreholesurvey"
+                },
+                "id": 140,
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        29.34269515,
+                        47.58758324
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "BHNo": "BH-07",
+                    "GL": "113.19",
+                    "GWL": "0.00",
+                    "boringDiam": "125.00",
+                    "location": "KNPC MAA, SHU to Al Mutla Depot, State of Kuwait",
+                    "locationDetailed": "near Rd.80",
+                    "startDate": "2015-11-21T00:00:00Z",
+                    "endDate": "2015-11-21T00:00:00Z",
+                    "drillRigNo": "D-50MB",
+                    "jobOrderNo": "15-928",
+                    "notes": "The measured G.W.L. is approximate and has been recorded after at least 24 hours from completion of drilling. Dilute HCL Testing Per ASTM D2488, Clauses 10.6 &14.2.5 for checking the presence of CaCO3 which may indicate false soil strength.",
+                    "owner": 196,
+                    "contractor": 196,
+                    "consultant": 196,
+                    "operator": 196,
+                    "project": 209,
+                    "BoreholeGeology": [
+                        29,
+                        30,
+                        31
+                    ],
+                    "model": "BoreholesApp.boreholesurvey"
+                },
+                "id": 152,
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        29.42911706,
+                        47.66832528
+                    ]
+                }
+            }
+        ],
+        "crs": {
+            "type": "link",
+            "properties": {
+                "href": "http://spatialreference.org/ref/epsg/4326/",
+                "type": "proj4"
+            }
+        }
+    }
+}

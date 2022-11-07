@@ -1,0 +1,73 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 200px 1fr 200px;
+	grid-template-areas: 
+	"header header header-logo"
+	"content content content"
+	"footer footer footer";
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+	background-color:   rgba(0,0,0,0.85);
+	color: whitesmoke;
+	font-size: 2em;
+	font-family: "Verdana", "sans-serif";
+	
+	
+}
+.header-logo {
+	grid-area: header-logo;
+	object-fit:fill;
+	background-color:  rgba(0,0,0,0.85);
+	
+	
+}
+.logo{
+	width:175px;
+	height: auto;
+}
+
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+	padding:10px;
+	background-color:#333;;
+}
+
+.sidebar-item {
+    padding: 10px; /* adds inner padding */
+    /* background: gainsboro; background color */
+    /* border: 1px solid gray; border width, style, and color */
+    margin: 5px; /*outer padding */
+	font-size:large;
+
+
+	box-shadow: inset 0 0 0 0 #54b3d6;
+	color: #54b3d6;
+	/* margin: 0 -.25rem; */
+	/* padding: 0 .25rem; */
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.sidebar-item:hover {
+	box-shadow: inset 100px 0 0 0 #54b3d6;
+	color: white;
+	cursor: pointer;
+  }
