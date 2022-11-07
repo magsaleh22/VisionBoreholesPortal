@@ -17,7 +17,7 @@ $(document).ready(function () {
 	
 
 	// plugins
-	// var ctlSidebarRight = L.control.sidebar('sidebar-right',{
+	//  ctlSidebarRight = L.control.sidebar('sidebar-right',{
 	// 	position: "right"
 	// }).addTo(map);
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
 	
-	// var ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
+	//  ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
 
 	ctlEasyButton = L.easyButton('fa-exchange', function(){
 		ctlSidebarLeft.toggle();
