@@ -12,8 +12,8 @@ var ctlSidebarRight;
 // initialize
 $(document).ready(function () {
 	createMap();
-	readJSON('../data/BH.json'); // wrong name but lets just proceed with it
-	jsonObject = $.getJSON('../data/BH.json');
+	readJSON('data/BH.json'); // wrong name but lets just proceed with it
+	jsonObject = $.getJSON('data/BH.json');
 	
 
 	// plugins
