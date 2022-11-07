@@ -17,9 +17,12 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     /> -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-     crossorigin=""/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="/css/L.Control.Sidebar.css" />
     <link rel="stylesheet" href="/css/easy-button.css" />
   </head>
@@ -51,7 +54,6 @@
             <h3>
               <i class="fa fa-bar-chart">
                 Borehole sedimens profile, depth in meters.
-                
               </i>
             </h3>
           </div>
@@ -62,20 +64,36 @@
       </div>
     </div>
   </body>
-  <!-- javascript of leaflet and its plugins-->
-  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-  integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-  crossorigin=""></script>
 
-    <!-- jquery -->
-    <script
+  <!-- load jquery first -->
+    <!-- <script src="{% static 'app/mdb/js/jquery-3.2.1.min.js' %}"></script> -->
+  <script
+    language="JavaScript"
+    type="text/javascript"
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"
-  ></script>
-  <script src="/js/easy-button.js"></script>
-  <script src="/js/L.Control.Sidebar.js"></script>
+    crossorigin="anonymous"></script>
 
+  <!-- javascript of leaflet and its plugins-->
+  <script
+    src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""
+  ></script>
+
+  <!-- leaflet easy button -->
+  <script
+    language="JavaScript"
+    type="text/javascript"
+    src="/js/easy-button.js"
+  ></script>
+
+  <!-- leaflet sidebar -->
+  <script
+    language="JavaScript"
+    type="text/javascript"
+    src="/js/L.Control.Sidebar.js"
+  ></script>
 
 
   <!-- barchart chart.js-->
@@ -83,5 +101,4 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script> -->
   <!-- my script should be the last one  -->
   <script src="js/map.js"></script>
-  
 </html>
