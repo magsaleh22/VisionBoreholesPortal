@@ -16,23 +16,18 @@ $(document).ready(function () {
 	jsonObject = $.getJSON('../data/BH.json');
 	
 
-	// plugins
-	//  ctlSidebarRight = L.control.sidebar('sidebar-right',{
-	// 	position: "right"
-	// }).addTo(map);
-
-	// console.log(map);
-
+	plugins
+	 ctlSidebarRight = L.control.sidebar('sidebar-right',{
+		position: "right"
+	}).addTo(map);
 
 	
-	//  ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
+	 ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
 
 	ctlEasyButton = L.easyButton('fa-exchange', function(){
 		ctlSidebarLeft.toggle();
 
 	}).addTo(map);
-
-
 
 
 });
