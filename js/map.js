@@ -17,12 +17,15 @@ $(document).ready(function () {
 	
 
 	// plugins
-
-	ctlSidebarRight = L.control.sidebar('sidebar-right',{
+	var ctlSidebarRight = L.control.sidebar('sidebar-right',{
 		position: "right"
 	}).addTo(map);
+
+	console.log(map);
+
+
 	
-	ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
+	var ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
 
 	ctlEasyButton = L.easyButton('fa-exchange', function(){
 		ctlSidebarLeft.toggle();
