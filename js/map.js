@@ -16,17 +16,16 @@ $(document).ready(function () {
 	jsonObject = $.getJSON('../data/BH.json');
 	
 
-	plugins
+	// plugins
 	 ctlSidebarRight = L.control.sidebar('sidebar-right',{
 		position: "right"
 	}).addTo(map);
 
 	
-	 ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
+	ctlSidebarLeft = L.control.sidebar('sidebar').addTo(map);
 
 	ctlEasyButton = L.easyButton('fa-exchange', function(){
 		ctlSidebarLeft.toggle();
-
 	}).addTo(map);
 
 
@@ -182,16 +181,16 @@ function drawBoreholeProfile(selectedBH){
 		,
 		options: {
 			type: "invertedLinear",
-			scales: {
-				xAxes: [{
-					// stacked: true // this should be set to make the bars stacked
-				 }],
+			// scales: {
+			// 	xAxes: [{
+			// 		// stacked: true // this should be set to make the bars stacked
+			// 	 }],
 				
-				yAxes: [{
-					beginAtZero: true,
-					stacked: true
-				}]
-			}
+			// 	yAxes: [{
+			// 		beginAtZero: true,
+			// 		stacked: true
+			// 	}]
+			// }
 		}
 	});
 }
